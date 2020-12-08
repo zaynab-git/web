@@ -43,6 +43,9 @@ button:hover {
 a {color: black;}
 a:hover {color:  #007BFF;}
 
+.hoverSection a{color: white;}
+.hoverSection:hover a{color: #007BFF;}
+.hoverSection:hover {background-color: white;}
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .nav-link {color: black;}
