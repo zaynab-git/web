@@ -3,6 +3,10 @@ body {
   background-color: #FAFAFA;
 }
 
+.card {
+  border-radius: 1rem;
+}
+
 header {
 padding: 1rem 7rem;
 }
@@ -22,6 +26,12 @@ position: relative;
 
 .nav-item:hover .drop-down{
     display: block;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 15rem;
+  overflow: auto;
 }
 
 .arr-right .breadcrumb-item+.breadcrumb-item::before {
@@ -49,7 +59,7 @@ button:hover {
 }
 
 a {color: black;}
-a:hover {color:  #1780DF;}
+a:hover {color: #1780DF ;}
 
 .hoverSection a{color: white;}
 .hoverSection:hover a{color: #1780DF;}
