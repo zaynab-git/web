@@ -24,6 +24,14 @@ position: relative;
     display: block;
 }
 
+.arr-right .breadcrumb-item+.breadcrumb-item::before {
+  content: "›";
+  vertical-align:top;
+  color: #1780DF;
+  font-size:35px;
+  line-height:18px;
+}
+
 button {
   color: #FB815E;
   font-weight: bolder;
@@ -41,15 +49,17 @@ button:hover {
 }
 
 a {color: black;}
-a:hover {color:  #007BFF;}
+a:hover {color:  #1780DF;}
 
 .hoverSection a{color: white;}
-.hoverSection:hover a{color: #007BFF;}
+.hoverSection:hover a{color: #1780DF;}
 .hoverSection:hover {background-color: white;}
+
+.bread {color: #1780DF;}
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .nav-link {color: black;}
-  .navbar .nav-item .enter {color: #007BFF; font-weight: bolder;}
+  .navbar .nav-item .enter {color: #1780DF; font-weight: bolder;}
 	.navbar .nav-item .dropdown-menu{ display: none;}
 	.navbar .nav-item:hover .nav-link{ color:red;  }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
