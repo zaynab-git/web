@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body >
+
+    <!-- توضیحات مربوط به هدر و فوتر در فایل مربوط به لست پزشکان وجود دارد -->
     <header class="navbar navbar-expand-lg navbar-light bg-white" style="font-size: 13px; font-weight: 400; padding: 1rem 10rem; top: 0px; color: #3B4157;">
         
         <a class="navbar-brand" href="#">
@@ -364,7 +366,7 @@
 </header>
 
 
-
+<!-- این بخش یک کروسل است که شامل 2 تصویر است که خود به خود پس از مدتی تغییر می کنند -->
 <section style="width: 80%; margin: auto; height: 10%">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" style="border-radius: 0.5rem;">
@@ -377,13 +379,17 @@
       </div>
 </section>
 
-
+<!-- بخش اصلی سایت که حاوی اسلاید بار و اطلاهات هر بیماری است -->
 <section style="width: 80%; margin: auto;">
     
+    <!-- این بخش شامل 2 ستون است -->
     <div class="row py-4 pr-3"    >
+        <!-- ستون اول -->
         <div class="px-0 col-md-5 col-lg-3"    >
+            <!-- پوزیشن این بخش فیکس است و با حرکت به پایین صفحه ثابت میماند -->
             <aside class="position-sticky fixed-top w-100"  >
-                <div class="card rounded-10"    ><!----><!---->
+                <div class="card rounded-10"    >
+                    <!-- بخش بالایی یا تیتر کارت -->
                     <div class="row align-items-center p-3 border-bottom "    >
                         <svg style="margin-right: 0.5rem;" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-3 text-slate feather feather-align-right"    >
                             <line x1="21" y1="10" x2="7" y2="10"    ></line>
@@ -397,8 +403,10 @@
                         <span style="font-size: 13px; color: gray;"> (به ترتیب حروف الفبا) </span>
                     </div> 
                     
-
+                    <!-- بخش داخلی کارت که شامل سرچ و تخصص ها است و قابل اسکرول کردن است -->
                     <div class=" my-custom-scrollbar" style="height: 38rem;" >
+                        
+                        <!-- قسمت سرچ -->
                         <div class="card-body px-0 position-relative mt-1 ml-2 mr-2" style="border-radius: 0.5rem;">
                             <svg style="color:  #1780DF;" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-2 mr-2 position-absolute search-icon text-steel feather feather-search"    >
                                 <circle cx="11" cy="11" r="8"    ></circle>
@@ -407,6 +415,7 @@
                             <input type="text" name="search" placeholder="تخصص مورد نظر خود را جستجو کنید." value="" class="border p-2 bg-light w-100 pr-5" style="font-size: 12px; border-radius: 0.5rem;"> 
                             
                         </div>
+                        <!-- لیست تخصص ها -->
                        <ul class="sickness_list" style="list-style-type: none; text-align: right; font-size: 16px; padding-right: 1rem;">
                             <li>
                                 <div style="border-radius: 0.2rem; text-align: center; width: 2.2rem; height: 2.2rem; background-color: #E5F2FE;">
@@ -473,6 +482,7 @@
                        </ul>
                     </div>
 
+                    <!-- بخش اسکرول کنید -->
                     <div class="btn-scroll position-sticky text-center align-items-center p-2 w-100 rounded-bottom-10" style="border-radius:0 0 0.5rem 0.5rem; bottom:0;right:0; background-color: #E5F2FE; color: #1780DF;"  >
                         اسکرول کنید
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"    >
@@ -484,19 +494,25 @@
             </aside>
         </div> 
 
+        <!-- ستون دوم -->
+        <!-- این بخش شامل 9 تخصص است و هر تخصص تقریبا یک سوم فضای سطر را اشغال می کند -->
         <div class="px-0 pr-md-3 row col-md-7 col-lg-9 col-12"    >
             <div class="px-0 mb-3 col-md-6 col-lg-4 col-12 px-md-3"    >
+                <!-- هر بیماری یک لینک است و شامل 3 ردیف است -->
                 <div class="card rounded-10 hover-melon h-100 p-3"      >
                     <a href="#"   class="text-decoration-none sickness-card" style="color: black;">
+                        <!-- ردیف اول حاوی تصویر و اسم بیماری است -->
                         <div class="row align-items-center mb-4"  >
                             <img src="https://www.darmankade.com/_nuxt/img/f5ffb82.svg" alt="گوارش و کبد" title="گوارش و کبد" class="w-25 dr-degree__image pr-2"  > 
                             <h5 class="font-weight-bold text-18 text-right w-75 text-slate pr-3 mb-0 line-height-30"  >
                                 گوارش و کبد
                             </h5>
                         </div> 
+                        <!-- ردیف دوم توضیحات بیماری است -->
                         <p class="text-justify mb-4 line-height-26" style="font-size: 13px; color: gray; line-height: 1.7rem;">
                             متخصص گوارش، کبد و آندوسکوپی پزشکی که بر سلامت گوارش تمرکز دارد و در زمینه تشخیص، ارزیابی و درمان اختلالا
                         </p> 
+                        <!-- ردیف سوم تعداد پزشکان و اعکسی از 3 تا از آنها و دکمه است -->
                         <div class="row"  >
                             <div style="margin-right: 1rem;">
                                 <img src="https://www.darmankade.com/UploadFiles/Doctor/131900288330649685%D8%AF%DA%A9%D8%AA%D8%B1-%D8%A8%D9%87%D8%B1%D8%A7%D9%85-%D9%87%D8%A7%D8%B4%D9%85%DB%8C.jpg" alt="بهرام هاشمی" class=" rounded-circle " style="width: 2rem;">
@@ -506,6 +522,7 @@
                                      + 132 پزشک
                                 </p>
                             </div> 
+                            <!-- دکمه ی مشاهده بیشتر -->
                             <button style="font-size: small; font-weight: bolder;  margin-right: 2rem; padding: 0 1rem;" >
                                 مشاهده
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"    >
@@ -782,7 +799,7 @@
 
 
 
-
+<!-- توضیحات مربوط به هدر و فوتر در فایل مربوط به لیست پزشکان موجود است -->
     <footer style="background-color: #1780DF;">
         <div style="width: 80%; padding: 2rem 0; margin: auto;">
             <div class="container"  >
