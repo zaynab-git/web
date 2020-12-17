@@ -1,20 +1,26 @@
+/* در قسمت قایل نمایش سایت رنگ پسطمانه خاکستری روشن است و فونت از راست به چپ نویس است */
 body {
   direction: rtl; 
   background-color: #FAFAFA;
 }
 
+/* کلاس های از جنس کارت همگی حاشیه گرد دارند */
 .card {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
+/* هدر از بالا و پایین پدینگ دارد */
 header {
 padding: 1rem 7rem;
 }
 
+/* این کد کمک می کند دراپ داون ها نوبار حجم کمتری اشغال کنند */
 .nav-item {
 position: relative;
   display: inline-block;
 }
+
+/* بکگراند و ابعاد و پوزیشن زیرمجموعه های لینک های نوبار */
 .drop-down{
   display: none;
   position: absolute;
@@ -25,16 +31,19 @@ position: relative;
   z-index: 2147483647 ;
 }
 
+/* زیرمجموعه های هر لینک نوبار با حرکت موس روی آن نمایش داده می شود */
 .nav-item:hover .drop-down{
     display: block;
 }
 
+/* ویژگی های لازم برای اسکرول کردن در هر بخش */
 .my-custom-scrollbar {
   position: relative;
   overflow: auto;
   margin-left: 0.5rem;
 }
 
+/* ویژگی خورده نان ها . رنک و سایز فونت */
 .arr-right .breadcrumb-item+.breadcrumb-item::before {
   content: "›";
   vertical-align:top;
@@ -43,6 +52,7 @@ position: relative;
   line-height:18px;
 }
 
+/* ویژگی های اغلب دکمه های سایت */
  button {
   color: #FB815E;
   font-weight: bolder;
@@ -54,14 +64,18 @@ position: relative;
   padding: 0.5rem;
 }
 
+/* دکمه های هدر عرض بیشتری دارن */
 header button {
   width: 10rem;
 }
+
+/* دکمه ها با هاور کردن رنگ تکست و بکگراندشون تغییر می کنه */
 button:hover {
   color:white;
   background-color: #FB815E;
 }
 
+/* ویژگی دکمه های نوبت گیری در صفحه لیست پزشکان */
 .nobat {
   display: flex;
   flex-grow: row;
@@ -76,15 +90,21 @@ button:hover {
   font-weight: 500;
 }
 
+/* اغلب لینک های سایت رنگ فونت مشکی دارن که با هاور به آبی تغییر پیدا می کنه */
 a {color: black;}
 a:hover {color: #1780DF ;}
 
+/* لینک های فوتر ابتدا رنگ سفید دارن */
 .hoverSection a{color: white;}
 .hoverSection:hover a{color: #1780DF;}
+/* بکگراند لینک های فوتر با هاور کردن سفید می شه */
 .hoverSection:hover {background-color: white;}
 
+/* لینک های بردکرام یا خرده نون ها اول آبیه */
 .bread {color: #1780DF;}
 
+/* در نوبار لینک ها اول سیاه ان و با هاور به رنگ قرمز درمیان */
+/* بدون استفاده از بوتسترپ زیرمجموعه ی هر لینک نوبار به این صورت نمایش داده می شه */
 @media all and (min-width: 992px) {
   .navbar .nav-item .nav-link {color: black;}
   .navbar .nav-item .enter {color: #1780DF; font-weight: bolder;}
@@ -94,6 +114,7 @@ a:hover {color: #1780DF ;}
   .navbar .nav-item .dropdown-menu{ margin-top:0; color: black;}
 }
 
+/* لیست بیماری ها از بالا پدینک داره و لینک هاش رنگ خاکستریه که با هاور آبی می شه */
 .sickness_list li{
   padding-top: 0.5rem;
 }
