@@ -31,8 +31,9 @@ position: relative;
 
 .my-custom-scrollbar {
   position: relative;
-  height: 15rem;
+  height: 12rem;
   overflow: auto;
+  margin-left: 0.5rem;
 }
 
 .arr-right .breadcrumb-item+.breadcrumb-item::before {
@@ -91,3 +92,15 @@ a:hover {color: #1780DF ;}
   .navbar .nav-item .dropdown-menu{ margin-top:0; color: black;}
 }
 
+.sickness_list li{
+  padding-top: 0.5rem;
+}
+
+.sickness_list li a{
+  color: gray;
+}
+
+
+.sickness_list li a:hover{
+  color: #1780DF;
+}
