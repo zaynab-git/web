@@ -31,7 +31,6 @@ position: relative;
 
 .my-custom-scrollbar {
   position: relative;
-  height: 12rem;
   overflow: auto;
   margin-left: 0.5rem;
 }
@@ -44,7 +43,7 @@ position: relative;
   line-height:18px;
 }
 
-button {
+ button {
   color: #FB815E;
   font-weight: bolder;
   background-color: white;
@@ -53,6 +52,9 @@ button {
   border-color: #FB815E;
   border-radius: 5px;
   padding: 0.5rem;
+}
+
+header button {
   width: 10rem;
 }
 button:hover {
