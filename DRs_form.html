@@ -378,9 +378,9 @@
     </div>
 </header>
 
-
-
+<!-- تمامی بخش های به غیر از هدر و فوتر 80 تا 75 درصد عرض صفحه را دارند -->
 <section style="width: 75%; margin: auto;">
+<!-- این بخش خرده نان یا همان راهنمای سایت است که مشخص می کنم در کدام بخش از سایت هستیم -->
 
     <nav aria-label="breadcrumb ">
         <ol class="breadcrumb arr-right bg-light">
@@ -388,7 +388,7 @@
             <li class="breadcrumb-item active" aria-current="page"> متخصص مغز و اعصاب(نورولوژی) </li>
         </ol>
     </nav>
-
+<!-- این بخش معرفی صفحه است و بکگراند آن آبی است و رنگ متن آن سفید -->
     <div style=" background: #1780DF;  border-radius: 1rem; color: white;">
         <h3 style="padding-left: 12rem; padding-right: 0; padding-top: 1rem; padding-bottom: 1rem;">
             لیست بهترین متخصص مغز و اعصاب(نورولوژی) برای مشاوره آنلاین و حضوری
@@ -399,15 +399,16 @@
     </div>
 </section>
 
+<!-- بخش میانی و اصلی سایت شامل لیست پزشک ها و اسلایدبار و توضیحات و سوالات -->
 <section style="width: 80%; margin: auto;">
 
-
+<!-- این بخش از دو ستون تشکیل شده   -->
      <div id="main-content" class="row w-100"    >
          <div class="px-0 mt-4 col-md-3 col-3"    >
+             <!-- این بخش اسلایدبار است که پوزیشن فیکس و ثابت دارد -->
              <div class="sidebar__inner fixed-top position-sticky"  >
                  <div class="w-100  mb-3">
-
-
+                    <!-- اولین بخش در اسلایدبار کاروسل است که به کمک دکمه های چپ و راست تصویر آن تغییر می کند -->
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" style="border-radius: 0.5rem;">
                           <div class="carousel-item active">
@@ -436,7 +437,7 @@
                           </a>
                       </div>
 
-
+                    <!-- بخش بعدی اسلایدبار که بهصورت کارت است مربوط به جست و جو در محتوای تخصص ها است -->
                     <div class="card border w-100 mb-3 px-3" style="border-radius: 0.5rem;">
                         <h5 class="card-title py-3 mb-0 font-weight-bold text-slate text-16 text-right"  >
                             جستجو در نتایج
@@ -451,10 +452,12 @@
                         </div>
                     </div> <!----> 
 
-                    
+                    <!-- بخش های بعدی کارت هایی هستند که با کلیک بر روی بخش بالایی آنها بخش اصلی آنها نمایش اده می شود -->
+            <!-- در این بخش می توان تخصص را انتخاب کرد -->
             <div id="accordion" >
                 <div class="card border w-100 mb-3 px-3" style="border-radius: 0.5rem;">
                     <div class="card-header btn bg-white collapsed m-0 p-0" id="headingTwo">
+                        <!-- این قسمت قسمت هدر یا بالایی کارت است که قابل کلیک کردن است -->
                         <div class=" card-text m-0 pt-3" style="display: flex; flex-grow: row; font-weight: bold;" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseTwo">
                             <p>
                                 تخصص
@@ -464,10 +467,12 @@
                             </svg>
                         </div>
                     </div>
+                    <!-- این قسمت قسمت بادی کارت یا قسمت درونی آن است که هاید است و با کلیک روی هدر نمایش داده می شود -->
                     <div id="collapseone" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <div tabindex="-1" role="group" class="bv-no-focus-ring">
                                 <div class="row py-2"  >
+                                    <!-- هرکدام از این موارد قابل انتخاب هستند -->
                                     <div class="pr-0 pl-3 col-auto"  >
                                         <div class="d-inline-block custom-control custom-radio"  >
                                             <input id="متخصص روانپزشک (اعصاب و روان)" type="radio" value="1004" class="custom-control-input">
@@ -499,7 +504,7 @@
                     </div>
                 </div>
             </div>
-                   
+            <!-- انتخاب زمان نوبت گیری -->
             <div id="accordion" >
                 <div class="card border w-100 mb-3 px-3" style="border-radius: 0.5rem;">
                     <div class="card-header btn bg-white collapsed m-0 p-0" id="headingTwo">
@@ -547,7 +552,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- انتخاب جنسیت -->
             <div id="accordion" >
                 <div class="card border w-100 mb-3 px-3" style="border-radius: 0.5rem;">
                     <div class="card-header btn bg-white collapsed m-0 p-0" id="headingTwo">
@@ -595,7 +600,8 @@
                     </div>
                 </div>
             </div>
-
+            <!-- انتخاب بیمارستان -->
+            <!-- این قسمت یک اسکرولر هم ،به علت وجود تعداد زیادی از موارد قابل انتخاب، دارد -->
             <div id="accordion" >
                 <div class="card border w-100 mb-3 px-3 " style="border-radius: 0.5rem;">
                     <div class="card-header btn bg-white collapsed m-0 p-0" id="headingTwo">
@@ -684,7 +690,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- این بخش یک چک باکس است -->
             <div class="card border w-100 mb-3 px-3" style="border-radius: 0.5rem;">
                 <div class=" card-header btn bg-white collapsed m-0 p-0" id="headingTwo" style="display: flex; flex-direction: row;">  
                     <p class=" py-3 mb-0 font-weight-bold text-slate text-right" style="font-size: small;">
@@ -699,7 +705,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- این بخش ستون دوم است که شامل اسامی و اطلاعات هر پزشک است -->
         <div id="content" class="px-0 mt-4 content pr-md-3 col-md-9 col-12"    >
+            <!-- قسمت اول این بخش یک لیست برای فیلتر کردن پزشکان قابل نمایش است -->
             <div class="card rounded-10 mb-3 row border py-2 mr-1 " style="width: 98%;"    ><!----><!---->
                 <ul class="row list-unstyled pr-0 mb-0"  >
                     <li class="p-2 pr-3 text-16 text-slate font-weight-bolder"  >
@@ -732,21 +741,29 @@
                     </li>
                 </ul><!----><!---->
             </div> 
+            <!-- در این بخش اطلاعات پزشک نمایش داده می شود -->
             <div class="d-block m-0"  >
                 <div class=" pr-3 w-100 p-0"  >
                         <div class="row border rounded-10 w-100 mb-3 bg-white py-3" style="border-radius: 1rem;">
+                            <!-- بخش مربوط به هر پزشک یک لینک است -->
+                            <!-- که از 3 ستون تشکیل شده -->
                             <a href="#" class=" text-decoration-none row col-11 col-md-7 pl-md-2 px-0" style="color: black;">
+                                <!-- اولین ستون هر بخش یک تصویر از پزشک است -->
                                 <div class="px-0 pl-lg-3 col-4"  >
                                     <img style="width: 7rem;" src="https://www.darmankade.com/UploadFiles/Doctor/131899428573066339دکتر-مهران-جلالی.jpg" alt=" دکتر مهران جلالی" class="dr-img rounded-circle"  > <!---->
-                                </div> 
+                                </div>
+                                <!-- ستون دوم -->
                                 <div class="pr-md-0 pt-2 col-8"  >
+                                    <!--   ابتدا نام پزشک است -->
                                     <h5 class="text-slate font-weight-bold d-flex text-18"  >
                                         مهران جلالی
                                     </h5>
+                                    <!-- و بعد تخصص پزشک -->
                                     <h6 class="text-slate  d-flex text-15"  >
                                         متخصص مغز و اعصاب(نورولوژی)
                                     </h6> <!----> 
                                     <div class="my-md-4 mt-2 mb-3 d-flex pr-3"  >
+                                        <!-- این قسمت مربوط به نمایش ستاره ها و تعداد نظر ها است -->
                                         <div class=" row star-rating" style="color: blue;">
                                             <div    >
                                                 <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
@@ -776,13 +793,16 @@
                                         </div> 
                                         <span class="text-10 pt-1 pr-3"  > ( <span  >52</span> نظر ) </span>
                                     </div> 
+                                    <!-- قسمت نظر یکی از بیماران -->
                                     <p class="text-slate  d-flex text-15 pl-3"  >
                                          “ آقای دکتر خیلی با صبر وحوصله با بیمار برخورد میکنه. از نظر من عالی هستن😊 “
                                     </p>
                                 </div>
                             </a> <!----> 
+                            <!-- ستون سوم -->
                             <div class="px-0 pr-md-4 col-md-5 col-12"    >
                                 <a href="#"  ><!----> 
+                                    <!-- این بخش شامل آدرس و سابقه پزشک و درصد رضایت بیماران است -->
                                     <div class="card border-0 rounded-10 p-3 text-14 align-items-start" style="background: #E5F2FE ;">
                                         <ul class="list-unstyled pr-0 text-right text-12 mb-0"  >
                                             <li class="py-1 text-steel"  >
@@ -810,6 +830,7 @@
                                         </ul>
                                     </div> <!---->
                                 </a> 
+                                <!-- بخش بعدی دکمه ی نوبت گرفتن و اولین نوبت خالی است -->
                                 <div class="col-12 px-0 pt-3 text-center"  >
                                     <div class="d-inline-flex w-100 justify-content-between" style="height:55px;"  >
                                         <div class="h-100 w-80"  >
@@ -825,6 +846,7 @@
                                                 </div>
                                             </div>
                                         </div> 
+                                        <!-- آیکون قلب برای لایک کردن پزشک -->
                                         <span title="" class="btn bg-light w-20 mr-2 px-2 h-100  d-flex align-items-center justify-content-center" style="width:16%; color: blue; border-radius: 0.5rem; "  >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-blue"    >
                                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"    ></path>
@@ -1052,6 +1074,7 @@
         </div>
      </div>
 
+     <!-- این قسمت اطلاعات اضافه ای درباره تخصص مغز و اعصاب است که بکگراند آن آبی کمرنگ و رنگ متن آن مشکی است -->
      <div class="my-4 card border-0 rounded-10 p-3" style="background-color: #E5F2FE;">
          <h5 class="title-header" style="padding-left: 40rem;" >
             هر آنچه که باید از
@@ -1065,20 +1088,22 @@
                 <strong>متخصص مغز و اعصاب</strong> درمان می‌شوند.</p> <p><strong>پزشک مغز و اعصاب</strong> بیماریهایی از قبیل انواع سرد
                 </div> 
                 <div class="d-flex justify-content-end"  >
-                    <button class="btn btn-secondary left" style="color: white; border-radius: 0.5rem; font-size: small;">
-        بیشتر بخوانید
-        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"    ><polyline points="6 9 12 15 18 9"    ></polyline>
-        </svg> <!---->
-    </button>
+                <!-- دکمه ی گرفتن اطلاعات بیشتر -->
+                <button class="btn btn-secondary left" style="color: white; border-radius: 0.5rem; font-size: small;">
+                    بیشتر بخوانید
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"    ><polyline points="6 9 12 15 18 9"    ></polyline></svg>
+                </button>
 </div>
 </div>
 
+<!-- این بخش مربوط به سوالات متداول است که بکگراند آن سفید است -->
 <div class="rounded-20 border bg-white w-100 my-5"    >
     <p class="font-weight-bold text-slate py-3 text-20" style="font-size: large; padding-left: 55rem;">
     متخصص مغز و اعصاب(نورولوژی)
     </p> 
     <div class="p-4" >
         <div class="border-bottom py-3"    >
+            <!-- هر کدام از این دیو ها شامل یک سوال و علامت ستاره و آیکونی بریا کلیک کردن و نمایش جواب آن است -->
             <div class="w-100 d-flex" >
                 <svg style="background: #1780DF; color: #fff;" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="custom-class cursor-pointer feather feather-plus"    >
                     <line x1="12" y1="5" x2="12" y2="19"    ></line>
@@ -1197,11 +1222,12 @@
 
 
 
-
-    <footer class="bg-primary">
+<!-- فوتر بکگراند آبی دارد و از 3 ستون تشکیل شده  -->
+    <footer style="background-color: #1780DF;">
         <div style="width: 80%; padding: 2rem 0; margin: auto;">
             <div class="container"  >
                 <div class="row"  >
+                    <!-- ستون اول حاوی لوگوی سایت است و توضیح سایت -->
                     <div class="col-4"  >
                         <a href="#" title="صفحه اصلی" class="w-100" style="margin-left: 12rem;">
                             <img src="https://www.darmankade.com/_nuxt/img/7bbb5c4.svg" alt="درمانکده"  >
@@ -1211,6 +1237,7 @@
                             (نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)
                         </p>
                     </div> 
+                    <!-- ستون دوم شامل 2 ستون و 3 ردیم از لینک ها به بخش های اصلی سایت است -->
                     <div class="col-4 align-self-center"  >
                         <div class="row"  >
                             <div class="col-6"  >
@@ -1253,8 +1280,10 @@
                                 </ul>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    <!-- ستون سوم شامل 2 ردیف است که حاوی نماد اعتماد الکترونیک و لینک هایی به توییتر و اینستا و تلرگرام و لینکداین سایت است -->
                     <div class="col-4"  >
+                        <!-- نماد ها -->
                         <div class="row text-center justify-content-center"  >
                             <div class=" bg-white col-4 ml-3" style="border-radius: 2rem;">
                                 <img alt="logo-samandehi" src="img/img1.png" class="w-100 h-auto" >
@@ -1264,6 +1293,7 @@
                                     <img src="img/img2.png" alt="enamad" class="w-100 h-auto rounded-10" ></a>
                             </div> 
                             <div  >
+                                <!-- لینک ها -->
                                     <ul class="list-inline list-unstyled mt-4 row px-4 mb-0"  >
                                         <li class=" ml-5"  >
                                             <a  href="https://www.instagram.com/darmankade/" target="_blank"  >
@@ -1296,6 +1326,7 @@
                 </div>
             </div>
         </div> 
+        <!-- بخش آخر فوتر -->
         <div class="container-fluid bg-white"  >
             <div class="container"  >
                 <div class="row justify-content-between align-self-center py-2"  >
