@@ -1,3 +1,4 @@
+/* اضافه کردن فونت یکان */
 @font-face {
   font-family: Yekan;
   src: url('font/yekan-regular.eot');
@@ -12,21 +13,19 @@
   top: 0;
   color: #3B4157;
 }
+
 body {
   direction: rtl;
   background-color: #FAFAFA;
   margin: 0 !important;
   padding: 0 !important;
   height: 100%;
+  text-decoration: none;
+  font-family: Yekan;
 }
 
 header {
   padding: 1rem 7rem;
-}
-
-*{
-  text-decoration: none;
-  font-family: Yekan;
 }
 
 .nav-item {
@@ -221,10 +220,10 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   margin-left: 2rem;
   display: inline-block;
   width: 40%;
-  float: right;
+    
   /*width: 66%;*/
   text-align: justify;
-  /*float: right;*/
+  /*  */
 }
 .patient-comments {
   width: 100%;
@@ -235,7 +234,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   position: absolute;
   display: inline-block;
   width:40%;
-  float: left;
+
   /*background-color: #abc2d8;*/
   /*border-radius: 5px;*/
   border: 1px solid #1780df;
@@ -309,7 +308,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   height: 75px!important;
   border-radius: 50%;
   display: inline-block;
-  float: right;
+    
   margin-left: 52px;
   margin-top: 10px;
 }
@@ -337,7 +336,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   color: white;
   display: inline-block;
   width: 27%;
-  float: right;
+    
   padding: 2rem;
   margin-right: 13rem
 }
@@ -345,7 +344,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   color: white;
   display: inline-block;
   width: 27%;
-  float: left;
+
   padding: 2rem;
   margin-left: 13rem
 }
@@ -373,7 +372,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
 }
 .col1 {
   display: inline-block;
-  float: right;
+    
   width: 40%;
   padding: 4%;
 }
@@ -385,7 +384,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
 }
 .col2{
   display: inline-block;
-  float: left;
+
   width: 40%;
   padding: 4%;
 }
@@ -406,7 +405,6 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
 }
 send-link-button{
   display: inline-block;
-  float: left;
 
 }
 input#tel {
@@ -418,7 +416,7 @@ input#tel {
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
   display: inline-block;
   /*width: 50%;*/
-  float: right;
+    
 }
 
 .phone-icon{
@@ -443,7 +441,7 @@ input#tel {
 }
 .send-link-button{
   display: inline-block;
-  float: right;
+    
   position: relative;
   right: 0;
 
@@ -523,9 +521,6 @@ p.fixed-button{
 }
 .footer-row2-col2 a{
   color: white;
-}
-.footer-row2-col2 li{
-  /*float: left;*/
 }
 
 
@@ -639,76 +634,9 @@ p.fixed-button{
   padding: 1rem;
   font-size: 14px;
 }
-.main-container{
-  margin-right: 0!important;
-  margin-left: 0!important;
-  min-height: 100vh!important;
-  /*min-height: 100vh;*/
-  background-size: cover;
-
-}
-.blue-login-header{
-
-  display: inline-block;
-  width: 30%;
-  min-height: 100vh;
-  top: 0;
-  right: 0;
-  color: #fff;
-  background-color: #1780df;
-  -webkit-box-flex: 0;
-  float: right;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
-  margin: auto;
-  vertical-align: middle;
 
 
-
-
-}
-.header-container {
-  margin-top: 50%;
-}
-
-.login-form {
-
-  display: inline-block;
-
-  min-height: 100vh;
-  top: 0;
-  right: 0;
-
-  -webkit-box-flex: 0;
-
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
-  margin: auto;
-  vertical-align: middle;
-
-  width: 70%;
-  /*height: 100vh;*/
-  float: left;
-}
-.form-button-1{
-
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 300;
-  width: 100%;
-  background: #fb815e;
-  color: #fff;
-  box-shadow: none;
-  margin-top: 2rem;
-  border: none;
-  padding: 14px;
-  cursor: pointer;
-  outline: none
-
-}
-.form-button-2{
+.form-button{
 
   text-align: center;
   width: 30%;
@@ -718,16 +646,11 @@ p.fixed-button{
   border-radius: 10px;
   margin-top: 1rem
 }
-.form-button-2:hover{
+.form-button:hover{
   background-color: #fb815e;
   color: white;
 }
-.form-container{
-  margin-top: 22%;
-  margin-right: 25%;
-  width: 50%;
-  position: relative;
-}
+
 .phone-input input {
   padding: 12px 10px;
   border: 1px solid #cdcdcd;

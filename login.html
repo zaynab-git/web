@@ -7,58 +7,110 @@
 </head>
 <body>
 
+<!-- بخش اصلی سایت از 2 ستون تشکبل شده -->
+<section>
+    <div style="margin-right: 0!important;
+    margin-left: 0!important;
+    min-height: 100vh!important;
+    /*min-height: 100vh;*/
+    background-size: cover;
+  ">
+        <!-- ستون اول که شامل لوگو و خوش آمد گویی است که بکگراند آبی دارد و فونت آن درشت است -->
+        <div style="display: inline-block;
+        width: 30%;
+        min-height: 100vh;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background-color: #1780df;
+        -webkit-box-flex: 0;
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        margin: auto;
+        vertical-align: middle;">
 
-<div class="main-container">
-    <div class="blue-login-header">
-        <div class="header-container">
-            <div class="login-logo">
-                <img title="درمانکده" alt="درمانکده"
-                     src="https://www.darmankade.com/_nuxt/img/7bbb5c4.svg"
-                >
+            <div style="margin-top: 50%; font-size: x-large;">
+                <div>
+                    <img style="width: 15rem;" title="درمانکده" alt="درمانکده"
+                         src="https://www.darmankade.com/_nuxt/img/7bbb5c4.svg">
+                    
+                </div>
+                <h4 >
+                    به درمانکده خوش آمدید
+                </h4>
+                <h5>
+                    نوبت دهی آنلاین مطب پزشکان
+                </h5>
             </div>
-            <h4 class="welcome">
-                به درمانکده خوش آمدید
-            </h4>
-            <h5>
-                نوبت دهی آنلاین مطب پزشکان
-            </h5>
+        </div>
+    
+    <!-- ستون دوم -->
+        <div style="display: inline-block;
+
+        min-height: 100vh;
+        top: 0;
+        right: 0;
+      
+        -webkit-box-flex: 0;
+      
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        margin: auto;
+        vertical-align: middle;
+      
+        width: 70%;
+        /*height: 100vh;*/
+        float: left;">
+            <!-- این بخش شامل قسمتی برای وارد کردن شماره تلفن است -->
+            <div style="margin-top: 22%;
+            margin-right: 25%;
+            width: 50%;
+            position: relative;">
+    
+                <h5>
+                    برای ورود شماره همراه خود را وارد کنید.
+                </h5>
+                <div class="phone-input">
+                    <label>
+                        شماره همراه
+                    </label>
+    
+                        <input
+                                placeholder="مثلا 09121234567" type="text" maxlength="12" value=""
+                                class="dr-input" data-v-64f32286>
+    
+    
+                </div>
+                <button style="border-radius: 10px;
+                font-size: 15px;
+                font-weight: 300;
+                width: 100%;
+                background: #fb815e;
+                color: #fff;
+                box-shadow: none;
+                margin-top: 2rem;
+                border: none;
+                padding: 14px;
+                cursor: pointer;
+                outline: none" type="button">
+                    
+                    دریافت کد تایید
+                    <svg data-v-64f32286="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline data-v-64f32286="" points="11 17 6 12 11 7"></polyline>
+                        <polyline data-v-64f32286="" points="18 17 13 12 18 7"></polyline>
+                    </svg>
+                </button>
+    <!-- دکمه دوم ابتدا بی رنگ است و با هاور مردن روی آن نارنجی می شود -->
+                <button class="form-button" type="button">
+                    کد معرف دارید؟
+                </button>
+            </div>
         </div>
     </div>
+</section>
 
-
-    <div class="login-form">
-        <div class="form-container">
-
-            <h5>
-
-                برای ورود شماره همراه خود را وارد کنید.
-            </h5>
-            <div class="phone-input">
-                <label>
-                    شماره همراه
-                </label>
-
-                    <input
-                            placeholder="مثلا 09121234567" type="text" maxlength="12" value=""
-                            class="dr-input" data-v-64f32286>
-
-
-            </div>
-            <button class="form-button-1" type="button">
-                
-                دریافت کد تایید
-                <svg data-v-64f32286="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline data-v-64f32286="" points="11 17 6 12 11 7"></polyline>
-                    <polyline data-v-64f32286="" points="18 17 13 12 18 7"></polyline>
-                </svg>
-            </button>
-
-            <button class="form-button-2" type="button">
-                کد معرف دارید؟
-            </button>
-        </div>
-    </div>
-</div>
 
 
 </body>
