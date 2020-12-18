@@ -1,7 +1,18 @@
+@font-face {
+  font-family: Yekan;
+  src: url('font/yekan-regular.eot');
+  src: url('font/yekan-regular.eot?#iefix') format('FontName-opentype'),
+  url('font/yekan-regular.woff') format('woff'), /* این فرمت فایل در فونت ضروری است */
+  url('font/yekan-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* در قسمت قایل نمایش سایت رنگ پسطمانه خاکستری روشن است و فونت از راست به چپ نویس است */
 body {
   direction: rtl; 
   background-color: #FAFAFA;
+  font-family: Yekan;
 }
 
 /* کلاس های از جنس کارت همگی حاشیه گرد دارند */
