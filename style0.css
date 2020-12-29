@@ -1,0 +1,89 @@
+/* این فایل مربوط است به سی اس اس بخش خدمات ویژه و دانلود اپلیکیشن که در صفحات مختلف تکرار شده است */
+.services{
+
+    background-image: url("https://www.darmankade.com/_nuxt/img/75bb3ac.png");
+  
+  }
+
+  .row1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 31px;
+    padding-top: 10px
+  }
+
+ 
+  .services img{
+    width: 100%;
+  }
+  .services p{
+    margin-bottom: 2rem;
+  }
+  
+  .services a{
+    line-height: 1.5;
+    left: 9px;
+    text-align: center;
+    color: #fff;
+    background-color: #fa6439;
+    border-color: #fa5a2c;
+    border-radius: 15px;
+    margin-top: 7px;
+    padding: 10px 6rem;
+  
+  }
+  
+  .services a:hover{
+    background-color: #f94713;
+  }
+
+  /* بخش سرویس ها از 2 ستون تشکیل شده */
+  .col1 {
+    display: inline-block;
+    margin-left: 10rem;
+    width: 40%;
+  }
+  .apps{
+    text-align: center;
+  }
+  .col1 .img1 img{
+    width: 100%;
+  }
+  .col2{
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 4%;
+  }
+  .col2 h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .col2 .p1{
+    color: #726f6f;
+    margin-bottom: 3rem;
+    font-size: 16px;
+  }
+
+  /* دکمه ی بخش دریافت اپلیکیشن که دارای انیمیشنی است که با هاور فعال می شود */
+  .phone-icon{
+    display: inline-block;
+    width: 40px;
+    height: 3rem;
+    background-color: #fc9c81;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 20px 10px 10px 20px;
+    z-index: -1;
+    content: "";
+    bottom: 0;
+    right: 0;
+  }
+  .phone-icon:hover {
+    width: 200px;
+    /*background-color: #fb815e;*/
+    border-radius: 10px;
+    z-index: -1;
+  
+  }

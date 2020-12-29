@@ -46,7 +46,7 @@ a.nav-item{
 .drop-down{
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 700px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
@@ -67,7 +67,7 @@ button {
   padding: 0.5rem;
 
   width: 4rem;
-  color: blue;
+  color: #1780DF;
   background-color: rgba(0,0,0,0);
   border: none;
 }
@@ -76,7 +76,7 @@ button {
   width: 7rem;
   height: 2rem;
   border-radius: 5px;
-  color: blue;
+  color: #1780DF;
 
 }
 button.enter:hover {
@@ -85,7 +85,7 @@ button.enter:hover {
 }
 
 a {color: black;}
-a:hover {color:  #007BFF;}
+a:hover {color:  #1780DF;}
 .text-decoration-none{
   flex-grow: 1;
 }
@@ -105,30 +105,21 @@ a:hover {color:  #007BFF;}
   height: 4rem;
   width: 50rem;
 }
-svg.pr-2.m-auto.text-light-gray-blue.custom-class.border-right.feather.feather-map-pin {
+svg.pr-2.m-auto.text-light-gray-#1780DF.custom-class.border-right.feather.feather-map-pin {
   color: darkgray;
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 3px;
 }
 
-svg.pl-1.m-auto.text-light-gray-blue.custom-class.feather.feather-chevron-down {
+svg.pl-1.m-auto.text-light-gray-#1780DF.custom-class.feather.feather-chevron-down {
   color: darkgray;
 
   padding-left: 3px;
   padding-right: 13px;
 
 }
-input.border-0.form-control.name.px-3.py-4 {
-  /*padding-right: 118px;*/
-  border-radius: 15px;
-  /*text-align: right;*/
-  border: none;
-  margin-left: -4px;
-  padding-left: 0px;
-  width: 20rem;
-  padding-right: 12px;
-}
+
 
 button.btn.px-5.btn-primary {
   background-color: coral;
@@ -157,7 +148,7 @@ button.btn.px-5.btn-primary:hover {
   margin-top: 1rem;
 }
 .seeAll{
-  color: blue;
+  color: #1780DF;
 }
 .drop-down-button{
   color: #fa5a2c;
@@ -315,15 +306,10 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
 .row2 h4{
   margin-top: 50px;
 }
-.special-services{
-  margin-right: 0!important;
-  margin-left: 0!important;
+.services{
+
   background-image: url("https://www.darmankade.com/_nuxt/img/75bb3ac.png");
-  background-size: cover;
-  height: 45rem;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 5rem
+
 }
 .row1{
   text-align: center;
@@ -332,29 +318,15 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
   font-size: 31px;
   padding-top: 10px
 }
-.special-services .prcTest{
-  color: white;
-  display: inline-block;
-  width: 27%;
-    
-  padding: 2rem;
-  margin-right: 13rem
-}
-.special-services .online-consulting{
-  color: white;
-  display: inline-block;
-  width: 27%;
 
-  padding: 2rem;
-  margin-left: 13rem
-}
-.special-services img{
+
+.services img{
   width: 100%;
 }
-.special-services p{
+.services p{
   margin-bottom: 2rem;
 }
-.special-services a{
+.services a{
   line-height: 1.5;
   left: 9px;
   text-align: center;
@@ -367,7 +339,7 @@ input.cursor-pointer.col.city.text-steel.border-0.shadow-none.pr-3 {
 
 }
 
-.special-services a:hover{
+.services a:hover{
   background-color: #f94713;
 }
 .col1 {
@@ -473,7 +445,7 @@ p.fixed-button{
   height: 0;
 }
 .footer{
-  background-color: #007bff;
+  background-color: #1780DF;
   height: 66rem;
   width: 100%;
   color: white;
@@ -500,7 +472,7 @@ p.fixed-button{
 
 }
 .footer-row2-col1 a:hover{
-  color: #007bff;
+  color: #1780DF;
   background-color: white;
 
 }
@@ -556,7 +528,7 @@ p.fixed-button{
 
 }
 .footer-row2-col3 a:hover{
-  color: #007bff;
+  color: #1780DF;
   background-color: white;
 
 }
@@ -633,6 +605,8 @@ p.fixed-button{
   height: 1rem;
   padding: 1rem;
   font-size: 14px;
+  background-color: white;
+  color: black;
 }
 
 
@@ -680,7 +654,7 @@ p.fixed-button{
 }
 @media all and (min-width: 992px) {
   .navbar .nav-item .nav-link {color: black;}
-  .navbar .nav-item .enter {color: #007BFF; font-weight: bolder;}
+  .navbar .nav-item .enter {color: #1780DF; font-weight: bolder;}
   .navbar .nav-item .dropdown-menu{ display: none;}
   .navbar .nav-item:hover .nav-link{ color:red;  }
   .navbar .nav-item:hover .dropdown-menu{ display: block; }
