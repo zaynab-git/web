@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style0.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <script src="scrpt.js"></script>
 </head>
-<body>
+<body onload="displayData()" >
 
     <!--که بکگراند آن سفید هدر سسایت شامل عکس لوگو و نویگیشن و دکمه سرچ و ورود به سایتت است -->
     <!-- بکگراند سفید است -->
@@ -743,58 +744,52 @@
             </div> 
             <!-- در این بخش اطلاعات پزشک نمایش داده می شود -->
             <div class="d-block m-0"  >
-                <div class=" pr-3 w-100 p-0"  >
-                        <div class="row border rounded-10 w-100 mb-3 bg-white py-3" style="border-radius: 1rem;">
+                <div class=" pr-3 w-100 p-0" id="drs" >
+                        <div id="first" class="row border rounded-10 w-100 mb-3 bg-white py-3" style="border-radius: 1rem;">
                             <!-- بخش مربوط به هر پزشک یک لینک است -->
                             <!-- که از 3 ستون تشکیل شده -->
-                            <a href="#" class=" text-decoration-none row col-11 col-md-7 pl-md-2 px-0" style="color: black;">
+                            <a  href="#" class=" text-decoration-none row col-11 col-md-7 pl-md-2 px-0" style="color: black;">
                                 <!-- اولین ستون هر بخش یک تصویر از پزشک است -->
+                                
                                 <div class="px-0 pl-lg-3 col-4"  >
-                                    <img style="width: 7rem;" src="https://www.darmankade.com/UploadFiles/Doctor/131899428573066339دکتر-مهران-جلالی.jpg" alt=" دکتر مهران جلالی" class="dr-img rounded-circle"  > <!---->
+                                    <img id="avatar" style="width: 7rem;" src="https://www.darmankade.com/UploadFiles/Doctor/131899428573066339دکتر-مهران-جلالی.jpg" alt=" دکتر مهران جلالی" class="dr-img rounded-circle"  > <!---->
                                 </div>
                                 <!-- ستون دوم -->
                                 <div class="pr-md-0 pt-2 col-8"  >
                                     <!--   ابتدا نام پزشک است -->
-                                    <h5 class="text-slate font-weight-bold d-flex text-18"  >
+                                    <h5 id="name" class="text-slate font-weight-bold d-flex text-18"  >
                                         مهران جلالی
                                     </h5>
                                     <!-- و بعد تخصص پزشک -->
-                                    <h6 class="text-slate  d-flex text-15"  >
+                                    <h6 id="spec" class="text-slate  d-flex text-15"  >
                                         متخصص مغز و اعصاب(نورولوژی)
                                     </h6> <!----> 
                                     <div class="my-md-4 mt-2 mb-3 d-flex pr-3"  >
                                         <!-- این قسمت مربوط به نمایش ستاره ها و تعداد نظر ها است -->
-                                        <div class=" row star-rating" style="color: #1780DF;">
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
+                                        <div id="stars" class=" row star-rating" style="color: #1780DF;">
+                                            
+                                                <svg id="star" xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
                                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
                                                 </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
+                                                <svg id="star" xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
                                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
                                                 </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
+                                                <svg id="star" xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
                                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
                                                 </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
+                                                <svg id="star" xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
                                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
                                                 </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
+                                                <svg id="star" xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
                                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
                                                 </svg>
-                                            </div>
+                                            
+
                                         </div> 
-                                        <span class="text-10 pt-1 pr-3"  > ( <span  >52</span> نظر ) </span>
+                                        <span class="text-10 pt-1 pr-3"  > ( <span id="comments" >52</span> نظر ) </span>
                                     </div> 
                                     <!-- قسمت نظر یکی از بیماران -->
-                                    <p class="text-slate  d-flex text-15 pl-3"  >
+                                    <p id="comment_text" class="text-slate  d-flex text-15 pl-3"  >
                                          “ آقای دکتر خیلی با صبر وحوصله با بیمار برخورد میکنه. از نظر من عالی هستن😊 “
                                     </p>
                                 </div>
@@ -809,7 +804,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin"  ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"  ></path>
                                                     <circle cx="12" cy="10" r="3"  ></circle>
                                                 </svg> 
-                                                <span class="location text-steel mr-3"  >
+                                                <span id="location" class="location text-steel mr-3"  >
                                                      تهران
                                                      | پونک
                                                 </span>
@@ -819,13 +814,13 @@
                                                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"  ></path>
                                                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"  ></path>
                                                 </svg> 
-                                                <span class="text-steel mr-3"  >  تجربه کاری 27 سال</span>
+                                                <span class="text-steel mr-3"  >  تجربه کاری <span id="experience_years" >52</span> سال</span>
                                             </li> 
                                             <li class="pt-1 text-steel "  >
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up"  >
                                                     <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"  ></path>
                                                 </svg> 
-                                                <span class="text-steel mr-3"  > 94  درصد رضایت کاربران </span>
+                                                <span class="text-steel mr-3"  > <span id="user_percent" >52</span>  درصد رضایت کاربران </span>
                                             </li>
                                         </ul>
                                     </div> <!---->
@@ -854,221 +849,13 @@
                                         </span>
                                     </div> 
                                     <p class="text-center font-weight-medium mb-0 pt-2 " style="font-size: smaller; color: #4DCC70;">
-                                        اولین نوبت خالی دوشنبه 24 آذر
+                                        اولین نوبت خالی <span id="first_empty_date" >52</span>
                                     </p>
                                 </div>
                             </div>
                         </div>
  
-                        <div class=" row border rounded-10 w-100 mb-3 bg-white py-3" style="border-radius: 1rem;">
-                            <a href="#" class="text-decoration-none row col-11 col-md-7 pl-md-2 px-0" style="color: black;">
-                                <div class="px-0 pl-lg-3 col-4"  >
-                                    <img style="width: 7rem;" src="https://www.darmankade.com/UploadFiles/Doctor/190467.PNG" alt=" دکتر مهران جلالی" class="dr-img rounded-circle"  > <!---->
-                                </div> 
-                                <div class="pr-md-0 pt-2 col-8"  >
-                                    <h5 class="text-slate font-weight-bold d-flex text-18"  >
-                                        شیوا امامی
-                                    </h5>
-                                    <h6 class="text-slate  d-flex text-15"  >
-                                        متخصص مغز و اعصاب(نورولوژی)
-                                    </h6> <!----> 
-                                    <div class="my-md-4 mt-2 mb-3 d-flex pr-3"  >
-                                        <div class=" row star-rating" style="color: #1780DF;">
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                        </div> 
-                                        <span class="text-10 pt-1 pr-3"  > ( <span  >7</span> نظر ) </span>
-                                    </div> 
-                                    <p class="text-slate  d-flex text-15 pl-3"  >
-                                         “ سلام بسیار با حوصله و مهربان  بودند “
-                                    </p>
-                                </div>
-                            </a> <!----> 
-                            <div class="px-0 pr-md-4 col-md-5 col-12"    >
-                                <a href="#"  ><!----> 
-                                    <div class="card border-0 rounded-10 p-3 text-14 align-items-start" style="background: #E5F2FE ;">
-                                        <ul class="list-unstyled pr-0 text-right text-12 mb-0"  >
-                                            <li class="py-1 text-steel"  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin"  ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"  ></path>
-                                                    <circle cx="12" cy="10" r="3"  ></circle>
-                                                </svg> 
-                                                <span class="location text-steel mr-3"  >
-                                                     تهران
-                                                     | خیابان سید جلال
-                                                </span>
-                                            </li> 
-                                            <li class="py-1 text-steel "  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book"  >
-                                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"  ></path>
-                                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"  ></path>
-                                                </svg> 
-                                                <span class="text-steel mr-3"  >  تجربه کاری 6 سال</span>
-                                            </li> 
-                                            <li class="pt-1 text-steel "  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up"  >
-                                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"  ></path>
-                                                </svg> 
-                                                <span class="text-steel mr-3"  > 100  درصد رضایت کاربران </span>
-                                            </li>
-                                        </ul>
-                                    </div> <!---->
-                                </a> 
-                                <div class="col-12 px-0 pt-3 text-center"  >
-                                    <div class="d-inline-flex w-100 justify-content-between" style="height:55px;"  >
-                                        <div class="h-100 w-80"  >
-                                            <div class="btn text-center row align-items-center nobat">
-                                                <div  >
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white "    >
-                                                        <line x1="19" y1="12" x2="5" y2="12"    ></line>
-                                                        <polyline points="12 19 5 12 12 5"    ></polyline>
-                                                    </svg>
-                                                </div> 
-                                                <div class="text-white text-center pr-3 mx-auto"  >
-                                                    نوبت بگیر !
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <span title="" class="btn bg-light w-20 mr-2 px-2 h-100  d-flex align-items-center justify-content-center" style="width:16%; color: #1780DF; border-radius: 0.5rem; "  >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-#1780DF"    >
-                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"    ></path>
-                                            </svg>
-                                        </span>
-                                    </div> 
-                                    <p class="text-center font-weight-medium mb-0 pt-2 " style="font-size: smaller; color: #4DCC70;">
-                                        اولین نوبت خالی دوشنبه 24 آذر
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=" row border rounded-10 w-100 mb-3 bg-white py-3" style="border-radius: 1rem;">
-                            <a href="#" class="text-decoration-none row col-11 col-md-7 pl-md-2 px-0" style="color: black;">
-                                <div class="px-0 pl-lg-3 col-4"  >
-                                    <img style="width: 7rem;" src="https://www.darmankade.com/UploadFiles/Doctor/131844578822193322mehraban.jpg" alt=" دکتر مهران جلالی" class="dr-img rounded-circle"  > <!---->
-                                </div> 
-                                <div class="pr-md-0 pt-2 col-8"  >
-                                    <h5 class="text-slate font-weight-bold d-flex text-18"  >
-                                        ناصر مهربان
-                                    </h5>
-                                    <h6 class="text-slate  d-flex text-15"  >
-                                        متخصص مغز و اعصاب(نورولوژی)
-                                    </h6> <!----> 
-                                    <div class="my-md-4 mt-2 mb-3 d-flex pr-3"  >
-                                        <div class=" row star-rating" style="color: #1780DF;">
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                            <div    >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width=".8em" height=".8em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"    >
-                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"    ></polygon>
-                                                </svg>
-                                            </div>
-                                        </div> 
-                                        <span class="text-10 pt-1 pr-3"  > ( <span  >8</span> نظر ) </span>
-                                    </div> 
-                                    <p class="text-slate  d-flex text-15 pl-3"  >
-                                         “ با وجدانی و تشخیص عالی “
-                                    </p>
-                                </div>
-                            </a> <!----> 
-                            <div class="px-0 pr-md-4 col-md-5 col-12"    >
-                                <a href="#"  ><!----> 
-                                    <div class="card border-0 rounded-10 p-3 text-14 align-items-start" style="background: #E5F2FE ;">
-                                        <ul class="list-unstyled pr-0 text-right text-12 mb-0"  >
-                                            <li class="py-1 text-steel"  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-map-pin"  ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"  ></path>
-                                                    <circle cx="12" cy="10" r="3"  ></circle>
-                                                </svg> 
-                                                <span class="location text-steel mr-3"  >
-                                                     تهران
-                                                     | نیاوران
-                                                </span>
-                                            </li> 
-                                            <li class="py-1 text-steel "  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-book"  >
-                                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"  ></path>
-                                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"  ></path>
-                                                </svg> 
-                                                <span class="text-steel mr-3"  >  تجربه کاری 4 سال</span>
-                                            </li> 
-                                            <li class="pt-1 text-steel "  >
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-20 feather feather-thumbs-up"  >
-                                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"  ></path>
-                                                </svg> 
-                                                <span class="text-steel mr-3"  > 98  درصد رضایت کاربران </span>
-                                            </li>
-                                        </ul>
-                                    </div> <!---->
-                                </a> 
-                                <div class="col-12 px-0 pt-3 text-center"  >
-                                    <div class="d-inline-flex w-100 justify-content-between" style="height:55px;"  >
-                                        <div class="h-100 w-80"  >
-                                            <div class="btn text-center row align-items-center nobat">
-                                                <div  >
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left text-white "    >
-                                                        <line x1="19" y1="12" x2="5" y2="12"    ></line>
-                                                        <polyline points="12 19 5 12 12 5"    ></polyline>
-                                                    </svg>
-                                                </div> 
-                                                <div class="text-white text-center pr-3 mx-auto"  >
-                                                    نوبت بگیر !
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <span title="" class="btn bg-light w-20 mr-2 px-2 h-100  d-flex align-items-center justify-content-center" style="width:16%; color: #1780DF; border-radius: 0.5rem; "  >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon feather feather-heart text-water-#1780DF"    >
-                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"    ></path>
-                                            </svg>
-                                        </span>
-                                    </div> 
-                                    <p class="text-center font-weight-medium mb-0 pt-2 " style="font-size: smaller; color: #4DCC70;">
-                                        اولین نوبت خالی دوشنبه 24 آذر
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
+                    
                 </div>
             </div>
         </div>
@@ -1097,7 +884,7 @@
 </div>
 
 <!-- این بخش مربوط به سوالات متداول است که بکگراند آن سفید است -->
-<div class="rounded-20 border bg-white w-100 my-5"    >
+<div class="rounded-20 border bg-white w-100 my-5"  >
     <p class="font-weight-bold text-slate py-3 text-20" style="font-size: large; padding-left: 55rem;">
     متخصص مغز و اعصاب(نورولوژی)
     </p> 
