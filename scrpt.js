@@ -34,7 +34,6 @@ function displayDrs() {
 }
 
 function sortDrs() {
-
     var list = document.getElementById('drs');
 
     var nodesToSort = list.querySelectorAll('.my-dr');
@@ -48,4 +47,34 @@ function sortDrs() {
     }).forEach(function(item) {
     list.appendChild(item.node);
 });
+}
+
+function displayInfo(){
+    fetch('https://intense-ravine-40625.herokuapp.com/doctors/3')
+   .then(response => response.json())
+   .then(data => {
+     
+            var name = document.getElementsByClassName('name');
+            name[0].innerHTML = data['name'];
+            name[1].innerHTML = data['name'];
+
+            var spec = document.getElementsByClassName('spec');
+            spec[0].innerHTML = data['spec'];
+            spec[1].innerHTML = data['spec'];
+
+        document.getElementsByClassName('avatar')[0].setAttribute('src',data['avatar']);
+        var number = document.getElementsByClassName('number');
+        number.innerHTML = data['number'];
+
+        if (data['online_pay']='true'){
+            document.getElementsByClassName('online_pay')[0].innerHTML = 'دارد';
+        }
+        else{
+            document.getElementsByClassName('online_pay')[0].innerHTML = 'ندارد';
+        }
+
+        document.getElementsByClassName('first_empty_date')[0].innerHTML = data['first_empty_date'];
+        document.getElementsByClassName('experience_years')[0].innerHTML = data['experience_years'];
+   });
+  
 }
