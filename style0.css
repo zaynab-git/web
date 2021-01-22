@@ -17,6 +17,8 @@
     width: 100%;
     padding: 20px 10px;
   }
+
+
   .round_bdy ul{
     list-style: none;
     padding-right: 0;
@@ -47,8 +49,8 @@
     text-align: center;
     color: #acadaf;
     display: inline-block;
-    width: 92px;
-    height: 90px;
+    width: 75px;
+    height: 80px;
     padding-top: 7px;
     cursor: pointer;
   }

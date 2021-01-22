@@ -68,6 +68,16 @@ function displayInfo(){
             spec[1].innerHTML = data['spec'];
 
         document.getElementsByClassName('avatar')[0].setAttribute('src',data['avatar']);
+        var i;
+        for (i = 0; i < 7; i++){
+
+            if (data['week_days'][i] == false){
+                document.getElementsByClassName('day')[i].setAttribute('src','img/cross.png');
+            }
+            if (data['week_days'][i] == true){
+                document.getElementsByClassName('day')[i].setAttribute('src','img/check.png');
+            }  
+        }
         
 
         if (data['online_pay']='true'){
@@ -86,5 +96,17 @@ function displayInfo(){
         }
 
    });
+
+   document.getElementsByClassName('week_bdy')[0].style.display = 'none';
   
+}
+
+function show_map(){
+    document.getElementsByClassName('week_bdy')[0].style.display = 'none';
+    document.getElementsByClassName('map_bdy')[0].style.display = 'block';
+}
+
+function show_week(){
+    document.getElementsByClassName('week_bdy')[0].style.display = 'block';
+    document.getElementsByClassName('map_bdy')[0].style.display = 'none';
 }
