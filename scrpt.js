@@ -68,8 +68,7 @@ function displayInfo(){
             spec[1].innerHTML = data['spec'];
 
         document.getElementsByClassName('avatar')[0].setAttribute('src',data['avatar']);
-        var number = document.getElementsByClassName('number');
-        number.innerHTML = data['number'];
+        
 
         if (data['online_pay']='true'){
             document.getElementsByClassName('online_pay')[0].innerHTML = 'دارد';
@@ -78,9 +77,14 @@ function displayInfo(){
             document.getElementsByClassName('online_pay')[0].innerHTML = 'ندارد';
         }
 
-        document.getElementsByClassName('first_empty_date')[0].innerHTML = data['first_empty_date'];
-        document.getElementsByClassName('experience_years')[0].innerHTML = data['experience_years'];
-        document.getElementsByClassName('comments')[0].innerHTML = data['comments'];
+        for (key in data){
+            if (key == 'name' || key == 'stars' || key == 'id' ||  key == 'week_days' || key == 'spec' || key == 'avatar' || key == 'online_pay'){}
+            else {
+                document.getElementsByClassName(key)[0].innerHTML = data[key];
+            }
+
+        }
+
    });
   
 }
