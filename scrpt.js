@@ -1,4 +1,5 @@
 
+// نمایش پزشکان و خلاصه ی اطلاعات هر کدام
 function displayDrs() {
   
    fetch('https://intense-ravine-40625.herokuapp.com/doctors')
@@ -33,6 +34,7 @@ function displayDrs() {
   
 }
 
+// سورت کردن پزشکان بر حسب رضایتمندی 
 function sortDrs() {
     var list = document.getElementById('drs');
 
@@ -49,11 +51,13 @@ function sortDrs() {
 });
 }
 
-function printme(x){
+// معلوم می کند کدام پزشک انتخاب شده
+function choose_dr(x){
     localStorage.setItem("dr", parseInt(x) +1);
     console.log(localStorage.getItem("dr"))
 }
 
+// نمایش اطلاعات پزشک انتخاب شده
 function displayInfo(){
     fetch('https://intense-ravine-40625.herokuapp.com/doctors/' + localStorage.getItem("dr"))
    .then(response => response.json())
@@ -101,11 +105,13 @@ function displayInfo(){
   
 }
 
+// نمایش بخش آدرس و شماره تلفن
 function show_map(){
     document.getElementsByClassName('week_bdy')[0].style.display = 'none';
     document.getElementsByClassName('map_bdy')[0].style.display = 'block';
 }
 
+// نمایش بخش روز های هفته
 function show_week(){
     document.getElementsByClassName('week_bdy')[0].style.display = 'block';
     document.getElementsByClassName('map_bdy')[0].style.display = 'none';
