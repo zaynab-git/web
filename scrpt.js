@@ -53,8 +53,8 @@ function sortDrs() {
 
 // معلوم می کند کدام پزشک انتخاب شده
 function choose_dr(x){
-    localStorage.setItem("dr", parseInt(x) +1);
-    console.log(localStorage.getItem("dr"))
+    localStorage.setItem("dr", parseInt(x) + 1);
+    console.log(localStorage.getItem("dr"));
 }
 
 // نمایش اطلاعات پزشک انتخاب شده
