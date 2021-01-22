@@ -49,8 +49,13 @@ function sortDrs() {
 });
 }
 
+function printme(x){
+    localStorage.setItem("dr", parseInt(x) +1);
+    console.log(localStorage.getItem("dr"))
+}
+
 function displayInfo(){
-    fetch('https://intense-ravine-40625.herokuapp.com/doctors/3')
+    fetch('https://intense-ravine-40625.herokuapp.com/doctors/' + localStorage.getItem("dr"))
    .then(response => response.json())
    .then(data => {
      
@@ -75,6 +80,7 @@ function displayInfo(){
 
         document.getElementsByClassName('first_empty_date')[0].innerHTML = data['first_empty_date'];
         document.getElementsByClassName('experience_years')[0].innerHTML = data['experience_years'];
+        document.getElementsByClassName('comments')[0].innerHTML = data['comments'];
    });
   
 }
